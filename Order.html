@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your DNA test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order-style.css">
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="infos.html">Informations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Order.html">Get your DNA test now!</a></li>
+        </ul>
+      </nav>
+</head>
+      <body>
+          <header>
+              <h1>Get your DNA test now!</h1>
+              <p class="header-p">Discover your origins, health and more with our DNA test.</p> <br>
+          <h2>!!! Until the 17th of December : 259€ only !!!</h2>
+            </header>
+      
+          <section class="order-form">
+              <form action="submit_order.php" method="post">
+                  <label for="name">Full name :</label>
+                  <input type="text" id="name" name="name" required>
+      
+                  <label for="email">Email :</label>
+                  <input type="email" id="email" name="email" required>
+      
+                  <label for="phone">Phone number :</label>
+                  <input type="tel" id="phone" name="phone" required>
+      
+                  <label for="address">Address :</label>
+                  <textarea id="address" name="address" required></textarea>
+      
+                  <label for="test-type">DNA test :</label>
+                  <select id="test-type" name="test_type" required>
+                      <option value="origines">Origins</option>
+                      <option value="santé">Health</option>
+                      <option value="complet">Full (Origins + Health)</option>
+                  </select>
+      
+                  <label for="privacy">Privacy policy :</label>
+                  <input type="checkbox" id="privacy" name="privacy" required>
+                  <span>I agree to the <a href="#privacy-policy">privacy policy</a>.</span>
+      
+                  <button type="submit">Place my order</button>
+              </form>
+          </section>
+      
+          <footer>
+              <p>© 2024 Exogène | <a href="#privacy-policy">Privacy Policy</a></p>
+
+          </footer>
+      </body>
+      </html>
+      

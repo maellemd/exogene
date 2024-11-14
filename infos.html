@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-info.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Our special offer</title>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="infos.html">Informations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Order.html">Get your DNA test now!</a></li>
+        </ul>
+      </nav>
+</head>
+<body>
+
+<h1> Aliens Are Among Us</h1>
+<p>
+    Aliens are already here, watching us, studying our daily habits, possibly even manipulating our 
+    thoughts. 👽<span class="hover-text" onmouseover="showImage()">Aliens</span> have been rumored 
+    to be hiding in places we’d never expect, from the depths of our oceans to the far reaches of the galaxy!
+</p>
+
+<p>
+    In 1961, the Drake Equation suggested there could be billions of intelligent civilizations across the 
+    cosmos. Are we just one civilization among countless others? Or is Earth an anomaly, a rare gem in the 
+    cold vastness of space?
+</p>
+
+<p>
+    Some scientists believe alien life might exist on moons in our own solar system, like Europa or Titan, 
+    where mysterious chemical reactions hint at the possibility of alien microorganisms. Could they 
+    evolve into something more?
+</p>
+
+<p>
+    From crop circles to mysterious lights in the sky, sightings of extraterrestrial activity have been 
+    reported for decades. Yet, each report only adds more questions. Are aliens peaceful explorers, or are 
+    they plotting to conquer? Only time will tell!
+</p>
+<div id="overlay" onclick="hideImage()">
+    <img id="alien-image" src="/img/kinder-joy.png" alt="Funny Alien Cat">
+</div>
+<p>
+    The search continues, as we send signals out into space, hoping that one day, an intelligent species 
+    will respond with a simple "Hello." Until then, the mysteries of the universe remain unsolved.
+</p>
+<script>
+    function showImage() {
+        const overlay = document.getElementById('overlay');
+        overlay.classList.add('show');
+        overlay.style.display = 'flex';
+    }
+
+    function hideImage() {
+        const overlay = document.getElementById('overlay');
+        overlay.classList.remove('show');
+        setTimeout(() => {
+            overlay.style.display = 'none';
+        }, 1500); // Matches the transition duration
+    }
+</script>
+
+</body>
+</html>
